@@ -1,0 +1,11 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.FF_PDFGEN.cpp.obj": [
+			"FF_PDFGEN.init.gen.cpp.obj",
+			"FF_PDFGENBPLibrary.gen.cpp.obj",
+			"FF_PDFGEN.cpp.obj",
+			"FF_PDFGENBPLibrary.cpp.obj"
+		]
+	}
+}
