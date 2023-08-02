@@ -60,4 +60,7 @@ class UFF_PDFGENBPLibrary : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintCallable, meta = (DisplayName = "PDFGen - Add Text", Keywords = "pdf, gen, create, doc, docs, document, write"), Category = "PDFGen|Write")
 	static bool PDFGen_Add_Text(UPARAM(ref)UPdfGenDoc*& In_PDF, int32 PageIndex, FString In_Text, FVector2D In_Location, FVector2D In_Rotation, float FontSize, FColor In_Color);
 
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "PDFGen - Add Image", Keywords = "pdf, gen, create, doc, docs, document, write"), Category = "PDFGen|Write")
+	static bool PDFGen_Add_Image(UPARAM(ref)UPdfGenDoc*& In_PDF, int32 PageIndex, UObject* In_Texture, FVector2D In_Location, FVector2D In_Rotation, FColor TransparentColor);
+
 };
