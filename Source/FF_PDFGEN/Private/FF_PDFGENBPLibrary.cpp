@@ -191,7 +191,8 @@ bool PDF_Image_Callback(UPARAM(ref)UPdfGenDoc*& In_PDF, pdf_object* TargetPage, 
 	if (!Texture2D && !TRT2D)
 	{
 		UE_LOG(LogTemp, Display, TEXT("LibHaru PDF : There is no image to read."))
-			return nullptr;
+		
+		return nullptr;
 	}
 
 	TArray<FColor> Array_Colors;
